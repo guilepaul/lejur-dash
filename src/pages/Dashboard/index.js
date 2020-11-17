@@ -6,10 +6,6 @@ import Header from "../../components/Header";
 import api from "../../services/api";
 import Highlights from "./components/Highlights";
 
-// import * as S from './styles'
-
-// import { WeddingHook } from "../../hooks/wedding";
-
 import * as S from "./styles";
 
 const rand = () => Math.floor(Math.random() * 255);
@@ -131,9 +127,24 @@ const Dashboard = () => {
     return setUserPerMonth(Math.ceil(response.data.length / 30));
   };
 
+  const getCategories = async () => {
+    const response = await api.get("/invoice").catch((err) => console.log(err));
+
+    const singleCat = response.data
+      .map((item) => item.VENDOR_CATEGORY)
+      .filter(
+        (item, i) =>
+          response.data.map((item) => item.VENDOR_CATEGORY).indexOf(item) === i
+      );
+    console.log("single", singleCat);
+
+    return setSingleCategory(singleCat);
+  };
+
   useEffect(() => {
     getWedding();
     getUser();
+    getCategories();
   }, []);
 
   const data2 = {
