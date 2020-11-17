@@ -4,6 +4,9 @@ import Menu from "../../components/Menu";
 import Header from "../../components/Header";
 
 import api from "../../services/api";
+import Highlights from "./components/Highlights";
+
+// import * as S from './styles'
 
 // import { WeddingHook } from "../../hooks/wedding";
 
@@ -212,6 +215,7 @@ const Dashboard = () => {
       <S.ChartBannerWrapper>
         <Bar data={data} options={options} />
       </S.ChartBannerWrapper>
+      <Highlights />
       <S.ContainerSquareChart>
         <S.ChartSquareWrapper>
           <Doughnut data={data2} />

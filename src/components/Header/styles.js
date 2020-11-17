@@ -13,8 +13,11 @@ export const Container = styled.header`
 `
 
 export const LogoWrapper = styled.div`
-    height:95%;
+    height:60px;
     width: 60px;
-    align-self: flex-start;
-    background-color: green;
+    /* align-self: flex-start; */
+    /* background-color: green; */
+    z-index: 99;
+    margin-top: -26px;
+    margin-left: 40px;
 `

@@ -17,7 +17,7 @@ export const ChartBannerWrapper = styled.div`
     align-self: flex-end;
     border-radius: 25px;
     padding: 0 20px 5px 2px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 4px 12px rgba(88, 88, 88, 0.1), 0px 18px 31px rgba(88, 88, 88, 0.1);
 `
 
