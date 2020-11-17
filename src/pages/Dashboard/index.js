@@ -3,6 +3,8 @@ import {Bar, Doughnut, HorizontalBar} from '@reactchartjs/react-chart.js'
 import Menu from '../../components/Menu'
 import Header from '../../components/Header'
 
+import Highlights from './components/Highlights'
+
 import * as S from './styles'
 
 
@@ -132,6 +134,7 @@ const Dashboard = () => {
             <S.ChartBannerWrapper>
             <Bar data={data} options={options}/>
             </S.ChartBannerWrapper>
+            <Highlights />
             <S.ContainerSquareChart>
                 <S.ChartSquareWrapper>
                 <Doughnut data={data2} />

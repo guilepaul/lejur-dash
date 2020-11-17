@@ -6,6 +6,8 @@ export const Container = styled.div`
     width: 200px;
     height: 600px;
     top: 140px;
+    display: flex;
+    flex-direction: column;
 
 /* Branco */
 
@@ -14,4 +16,55 @@ background: #ffff;
 
 box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
 `
+export const LogoWrapper = styled.div`
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
 
+    img {
+        max-width: 140px;
+    }
+`
+
+export const ItemMenu = styled.div`
+    display: flex;
+
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 156%;
+align-items: center;
+margin: 20px 0;
+/* identical to box height, or 28px */
+
+
+/* Texto/Cinza Escuro - 2 */
+
+color: #585858;
+
+    img {
+        margin: 0 20px;
+        height: 22px;
+        width: auto;
+    }
+`
+export const Separator = styled.div`
+    height: 0px;
+    width: 96%;
+    align-self: center;
+
+/* Cinza Claro - 1 */
+
+border: 1px solid #E0E0E0;
+
+`
+export const ButtonWrapper = styled.div`
+    display: flex;
+    width: 100%;
+    padding: 0 12px;
+    margin: 20px 0;
+
+`
