@@ -9,17 +9,17 @@ import * as S from "./styles";
 const Footer = () => {
   return (
     <S.Container>
-      {/* <S.MediaWrapper> */}
-      {/* <S.Text>
+      <S.MediaWrapper>
+        {/* <S.Text>
         Encontre e contrate o fornecedor ideal para o seu casamento.
       </S.Text> */}
-      <S.Text>Feito com amor e carinho para ganhar o shape da FIAP</S.Text>
-      <S.SocialMedia>
-        <img src={insta} alt="insta" size={40} />
-        <img src={face} alt="insta" size={40} />
-        <img src={linkedin} alt="insta" size={40} />
-      </S.SocialMedia>
-      {/* </S.MediaWrapper> */}
+        <S.Text>Feito com amor e carinho para ganhar o shape da FIAP</S.Text>
+        <S.SocialMedia>
+          <img src={insta} alt="insta" size={40} />
+          <img src={face} alt="insta" size={40} />
+          <img src={linkedin} alt="insta" size={40} />
+        </S.SocialMedia>
+      </S.MediaWrapper>
     </S.Container>
   );
 };
