@@ -26,11 +26,11 @@ export const SocialMedia = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-right: 50px;
+  margin-right: 180px;
 `;
 
 export const Text = styled.span`
   color: #fff;
-  margin-left: 50px;
+  margin-left: 180px;
   font-size: 20px;
 `;
