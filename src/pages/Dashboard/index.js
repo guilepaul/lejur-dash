@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import {
   Bar,
@@ -7,6 +8,7 @@ import {
 } from "@reactchartjs/react-chart.js";
 import Menu from "../../components/Menu";
 import Header from "../../components/Header";
+
 
 import api from "../../services/api";
 import Highlights from "./components/Highlights";
@@ -108,6 +110,7 @@ const options = {
 };
 
 const Dashboard = () => {
+
   const [data, setData] = useState(genData());
   const [weddings, setWeddings] = useState([]);
   const [user, setUser] = useState([]);
@@ -197,6 +200,7 @@ const Dashboard = () => {
           "rgba(75, 192, 192, 0.2)",
           "rgba(153, 102, 255, 0.2)",
           "rgba(255, 159, 64, 0.2)",
+
         ],
         borderColor: [
           "rgba(255, 206, 86, 1)",
@@ -286,6 +290,7 @@ const Dashboard = () => {
             beginAtZero: true,
           },
         },
+
       ],
     },
     legend: {
@@ -339,3 +344,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
