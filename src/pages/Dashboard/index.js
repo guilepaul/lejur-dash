@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Bar, Doughnut, HorizontalBar } from "@reactchartjs/react-chart.js";
+import {
+  Bar,
+  Doughnut,
+  HorizontalBar,
+  VerticalBar,
+} from "@reactchartjs/react-chart.js";
 import Menu from "../../components/Menu";
 import Header from "../../components/Header";
 
@@ -175,11 +180,11 @@ const Dashboard = () => {
   };
 
   const data3 = {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ["Cássico", "Rústico", "Moderno"],
     datasets: [
       {
         label: "# of Votes",
-        data: [12, 19, 3, 5, 2, 3],
+        data: [12, 19, 3],
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
           "rgba(54, 162, 235, 0.2)",
@@ -211,6 +216,9 @@ const Dashboard = () => {
         },
       ],
     },
+    legend: {
+      display: false,
+    },
   };
 
   useEffect(() => {
@@ -229,14 +237,15 @@ const Dashboard = () => {
       <Highlights />
       <S.ContainerSquareChart>
         <S.ChartSquareWrapper>
-          <Doughnut data={data2} />
+          <Doughnut data={data2} width={85} height={85} />
         </S.ChartSquareWrapper>
         <S.ChartSquareWrapper>
-          <HorizontalBar
+          <Bar
             data={data3}
+            label={true}
             options={options2}
-            width={80}
-            height={80}
+            width={85}
+            height={85}
           />
         </S.ChartSquareWrapper>
       </S.ContainerSquareChart>
@@ -248,8 +257,8 @@ const Dashboard = () => {
           <HorizontalBar
             data={data3}
             options={options2}
-            width={80}
-            height={80}
+            width={85}
+            height={85}
           />
         </S.ChartSquareWrapper>
       </S.ContainerSquareChart>

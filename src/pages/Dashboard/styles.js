@@ -28,14 +28,19 @@ export const ContainerSquareChart = styled.div`
     align-self: flex-end;
     flex-direction: row;
     justify-content: space-between;
+    /* padding: 10px; */
     /* background-color: red; */
 `
 
 export const ChartSquareWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 45%;
     height: auto;
     border-radius: 25px;
     background-color: #fff;
+    padding: 10px 20px 10px 20px;
     z-index: 99;
     box-shadow: 0px 4px 12px rgba(88, 88, 88, 0.1), 0px 18px 31px rgba(88, 88, 88, 0.1);
 `
