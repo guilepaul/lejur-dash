@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Bar, Doughnut, HorizontalBar, VerticalBar} from '@reactchartjs/react-chart.js'
+import {Bar, Doughnut, HorizontalBar, Pie} from '@reactchartjs/react-chart.js'
 import Menu from '../../components/Menu'
 import Header from '../../components/Header'
 
@@ -55,7 +55,7 @@ const Dashboard = () => {
     const [data, setData] = useState(genData())
 
     const data2 = {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['tipo de rosca', 'bolinho', 'coxinha', 'Green', 'Purple', 'Orange'],
         datasets: [
           {
             label: '# of Votes',
@@ -122,6 +122,12 @@ const Dashboard = () => {
             display: false
           }
       }
+      const options3 = {
+        
+          legend: {
+            display: false
+          }
+      }
       
 
     useEffect(() => {
@@ -140,18 +146,20 @@ const Dashboard = () => {
             <Highlights />
             <S.ContainerSquareChart>
                 <S.ChartSquareWrapper>
-                <Doughnut data={data2} width={85} height={85} />
+                <Doughnut data={data2} width={85} height={85} options={options3}/>
                 </S.ChartSquareWrapper>
                 <S.ChartSquareWrapper>
+                  Tipos de Casamento
                 <Bar data={data3} label={true} options={options2} width={85} height={85}/>
                 </S.ChartSquareWrapper>
             </S.ContainerSquareChart>
             <S.ContainerSquareChart>
                 <S.ChartSquareWrapper>
-                <Doughnut data={data2} />
+                <HorizontalBar data={data3} options={options2} width={85} height={85}/>
                 </S.ChartSquareWrapper>
                 <S.ChartSquareWrapper>
-                <HorizontalBar data={data3} options={options2} width={85} height={85}/>
+                  Rosca
+                <Pie data={data2} width={85} height={85} options={options3} />
                 </S.ChartSquareWrapper>
             </S.ContainerSquareChart>
         </S.Container>
