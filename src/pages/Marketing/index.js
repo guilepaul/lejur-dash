@@ -20,7 +20,7 @@ import Highlights from "./components/Highlights";
 import * as S from "./styles";
 
 
-const Dashboard = () => {
+const Marketing = () => {
 
 
   // console.log('gendata', dataAppointments.labels)
@@ -100,27 +100,54 @@ const Dashboard = () => {
   // }, []);
 
   const data2 = {
-    labels: ["Criadas", "Confirmadas", "Canceladas"],
+    labels: ["Cadastrados", "Abandono"],
     datasets: [
       {
-        label: "Visitas",
-        data: [22, 34, 271],
+        label: "Novos acessos",
+        data: [154, 1322],
         backgroundColor: [
-          "rgba(255, 206, 86, 1)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 99, 132, 1)",
+            "rgba(153, 102, 255, 0.2)",
+            "rgba(255, 159, 64, 0.2)",
+            "rgba(54, 162, 235, 0.2)",
+            "rgba(255, 206, 86, 1)",
           "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)",
+          "rgba(255, 99, 132, 1)",
 
         ],
         borderColor: [
-          "rgba(255, 206, 86, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 99, 132, 1)",
+            "rgba(153, 102, 255, 1)",
+            "rgba(255, 159, 64, 1)",
+            "rgba(54, 162, 235, 1)",
+            "rgba(255, 206, 86, 1)",
           "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)",
+          "rgba(255, 99, 132, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
+  const data4 = {
+    labels: ["Fast", "Outros"],
+    datasets: [
+      {
+        label: "Lista de casamento",
+        data: [154, 1322],
+        backgroundColor: [
+            "rgba(75, 192, 192, 0.2)",
+            "rgba(255, 99, 132, 1)",
+            "rgba(153, 102, 255, 0.2)",
+            "rgba(255, 159, 64, 0.2)",
+            "rgba(54, 162, 235, 0.2)",
+            "rgba(255, 206, 86, 1)",
+
+        ],
+        borderColor: [
+            "rgba(75, 192, 192, 1)",
+            "rgba(255, 99, 132, 1)",
+            "rgba(153, 102, 255, 1)",
+            "rgba(255, 159, 64, 1)",
+            "rgba(54, 162, 235, 1)",
+            "rgba(255, 206, 86, 1)",
         ],
         borderWidth: 1,
       },
@@ -128,24 +155,24 @@ const Dashboard = () => {
   };
 
   const data3 = {
-    labels: ["Clássico", "Rústico", "Moderno"],
+    labels: ["Google", "Instagram", "Facebook", "Linkedin"],
     datasets: [
       {
         label: "Total",
         // data: [isClassico.length, isRustico.length, isModerno.length],
-        data: [2200, 1370, 248],
+        data: [2200, 1370, 987, 387],
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
           "rgba(255, 206, 86, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
           "rgba(75, 192, 192, 0.2)",
           "rgba(153, 102, 255, 0.2)",
           "rgba(255, 159, 64, 0.2)",
         ],
         borderColor: [
           "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
           "rgba(255, 206, 86, 1)",
+          "rgba(54, 162, 235, 1)",
           "rgba(75, 192, 192, 1)",
           "rgba(153, 102, 255, 1)",
           "rgba(255, 159, 64, 1)",
@@ -154,52 +181,34 @@ const Dashboard = () => {
       },
     ],
   };
-  const data4 = {
-    labels: ["Assessoria-de-casamento", "Mobiliario", "Decoracao-cenografia","Buffet", "Servico-de-bar-bartender",  "Banda",   "Dj", "Som-iluminacao", "Brinde-lembrancinhas", "Foto-e-filmagem", "Espaco", "Coral-orquestra", "Bolos-doces", "Danda-dj", "Aluguel-de-carro", "Lista-de-presentes"],
+  const data5 = {
+    labels: ["LGBTQ+", "Hétero"],
     datasets: [
       {
         label: "Total",
-        data: [4, 10, 20, 5, 5, 6, 8, 5, 9, 5, 70, 10, 15, 20, 10, 19],
+        // data: [isClassico.length, isRustico.length, isModerno.length],
+        data: [87487, 57659],
         backgroundColor: [
+            "rgba(255, 206, 86, 0.2)",
           "rgba(255, 99, 132, 0.2)",
           "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
           "rgba(75, 192, 192, 0.2)",
           "rgba(153, 102, 255, 0.2)",
           "rgba(255, 159, 64, 0.2)",
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)",
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
         ],
         borderColor: [
+            "rgba(255, 206, 86, 1)",
           "rgba(255, 99, 132, 1)",
           "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
           "rgba(75, 192, 192, 1)",
           "rgba(153, 102, 255, 1)",
           "rgba(255, 159, 64, 1)",
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)",
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
         ],
         borderWidth: 1,
       },
     ],
   };
+  
 
   const options2 = {
     layout: {
@@ -292,16 +301,36 @@ const Dashboard = () => {
 
   return (
     <S.Container>
-      <Header path='Dashboard Geral'/>
+      <Header path='Dashboard Marketing'/>
       <Menu />
       <S.ChartBannerWrapper>
         <Bar data={totalData[activeIndex]} options={optionsBanner} width={150} height={40} />
       </S.ChartBannerWrapper>
       <Highlights mediaUsuarios={154} casamentos={126} />
       <S.ContainerSquareChart>
+        <S.ChartSquareWrapper>
+        <S.LabelChart>
+          Novos acessos
+          </S.LabelChart>
+          <Doughnut data={data2} width={85} height={85} options={options4} />
+        </S.ChartSquareWrapper>
+        <S.ChartSquareWrapper>
+        <S.LabelChart>
+          Origem do acesso
+          </S.LabelChart>
+          <HorizontalBar
+            data={data3}
+            label={true}
+            options={options3}
+            width={85}
+            height={85}
+          />
+        </S.ChartSquareWrapper>
+      </S.ContainerSquareChart>
+      <S.ContainerSquareChart>
         <S.ChartSquareWrapperDouble>
           <S.LabelChart>
-          Invoices
+          Diverdidade - Quantidade de casamentos
           </S.LabelChart>
           <Bar
             data={dataInvoices}
@@ -312,44 +341,30 @@ const Dashboard = () => {
         </S.ChartSquareWrapperDouble>
       </S.ContainerSquareChart>
       <S.ContainerSquareChart>
-        <S.ChartSquareWrapper>
+      <S.ChartSquareWrapper>
         <S.LabelChart>
-          Visitas
+          Diversidade - Tícket médio
           </S.LabelChart>
-          <Pie data={data2} width={85} height={85} options={options4} />
-        </S.ChartSquareWrapper>
-        <S.ChartSquareWrapper>
-        <S.LabelChart>
-          Tipos de casamentos
-          </S.LabelChart>
-          <Bar
-            data={data3}
+          <HorizontalBar
+            data={data5}
             label={true}
             options={options3}
             width={85}
             height={85}
           />
         </S.ChartSquareWrapper>
-      </S.ContainerSquareChart>
-      <S.ContainerSquareChart>
-        {/* <S.ChartSquareWrapper>
-          <Doughnut data={data2} />
-        </S.ChartSquareWrapper> */}
-        <S.ChartSquareWrapperDouble>
-          <S.LabelChart>
-          Serviços mais utilizados
+        <S.ChartSquareWrapper>
+        <S.LabelChart>
+          Lista de presentes
           </S.LabelChart>
-          <Bar
-            data={data4}
-            options={options2}
-            width={200}
-            height={100}
-          />
-        </S.ChartSquareWrapperDouble>
+          <Doughnut data={data4} width={85} height={85} options={options4} />
+        </S.ChartSquareWrapper>
+        
       </S.ContainerSquareChart>
+      
     </S.Container>
   );
 };
 
-export default Dashboard;
+export default Marketing;
 

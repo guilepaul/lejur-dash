@@ -6,6 +6,7 @@ export default createGlobalStyle`
         padding: 0;
         outline: 0;
         box-sizing: border-box;
+        font-family: Lato;
     }
 
     body {
@@ -14,7 +15,7 @@ export default createGlobalStyle`
     }
 
     body, input, button {
-        font: 16px Roboto, sans-serif;
+        font: 16px Lato, sans-serif;
     }
 
     #root {

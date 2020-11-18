@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
 
     position: absolute;
     width: 200px;
     height: 600px;
-    top: 140px;
+    top: 370px;
     display: flex;
     flex-direction: column;
 
@@ -67,4 +68,14 @@ export const ButtonWrapper = styled.div`
     padding: 0 12px;
     margin: 20px 0;
 
+`
+
+export const LinkItem = styled(Link)`
+    text-decoration: none;
+    text-decoration-color: none;
+    color: #585858;
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+        text-decoration-color: none;
+    }
 `

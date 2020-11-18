@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import Button from '../Button'
 
 import logo from '../../assets/lejourFastLogo.png'
@@ -23,16 +24,21 @@ const Menu = () => {
             </S.ItemMenu>
             <S.Separator />
             <S.ItemMenu>
+            <S.LinkItem to={'/'}  >
                 <img src={dash} alt="Dash" />
                 Dashboard
+                </S.LinkItem>
             </S.ItemMenu>
             <S.ItemMenu>
+                <S.LinkItem to={'/marketing'}  >
+
                 <img src={costumer} alt="Usuários" />
-                Usuários
+                Marketing
+                </S.LinkItem>
             </S.ItemMenu>
             <S.ItemMenu>
                 <img src={business} alt="fornecedores" />
-                Fornecedores
+                Financeiro
             </S.ItemMenu>
             <S.ItemMenu>
                 <img src={schedule} alt="agenda" />
