@@ -8,17 +8,17 @@ export const Container = styled.footer`
   margin-top: 40px;
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
-  justify-content: space-between;
+  justify-content: center;
 
   /* Goiaba */
 
   background: #e2645a;
 `;
 export const MediaWrapper = styled.div`
-  justify-content: flex-end;
-
-  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
 `;
 
 export const SocialMedia = styled.div`
@@ -26,11 +26,9 @@ export const SocialMedia = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-right: 180px;
 `;
 
 export const Text = styled.span`
   color: #fff;
-  margin-left: 180px;
   font-size: 20px;
 `;
