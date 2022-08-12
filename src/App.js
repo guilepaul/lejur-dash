@@ -12,7 +12,7 @@ import Dashboard from './pages/Dashboard'
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes />
     </BrowserRouter>
     <GlobalStyle />

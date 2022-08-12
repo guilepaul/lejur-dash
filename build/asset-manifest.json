@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.4e6f61f3.chunk.js",
-    "main.js.map": "/static/js/main.4e6f61f3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c3e4adef.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c3e4adef.js.map",
-    "static/js/2.b09e1db8.chunk.js": "/static/js/2.b09e1db8.chunk.js",
-    "static/js/2.b09e1db8.chunk.js.map": "/static/js/2.b09e1db8.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.b09e1db8.chunk.js.LICENSE.txt": "/static/js/2.b09e1db8.chunk.js.LICENSE.txt"
+    "main.js": "/lejur-dash/static/js/main.55468698.chunk.js",
+    "main.js.map": "/lejur-dash/static/js/main.55468698.chunk.js.map",
+    "runtime-main.js": "/lejur-dash/static/js/runtime-main.eca4dc50.js",
+    "runtime-main.js.map": "/lejur-dash/static/js/runtime-main.eca4dc50.js.map",
+    "static/js/2.a3e4702c.chunk.js": "/lejur-dash/static/js/2.a3e4702c.chunk.js",
+    "static/js/2.a3e4702c.chunk.js.map": "/lejur-dash/static/js/2.a3e4702c.chunk.js.map",
+    "index.html": "/lejur-dash/index.html",
+    "static/js/2.a3e4702c.chunk.js.LICENSE.txt": "/lejur-dash/static/js/2.a3e4702c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3e4adef.js",
-    "static/js/2.b09e1db8.chunk.js",
-    "static/js/main.4e6f61f3.chunk.js"
+    "static/js/runtime-main.eca4dc50.js",
+    "static/js/2.a3e4702c.chunk.js",
+    "static/js/main.55468698.chunk.js"
   ]
 }
