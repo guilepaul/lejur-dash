@@ -12,6 +12,7 @@ export const dataAmount = {
       "Outubro",
       "Novembro",
       "Dezembro",
+      "mes novo"
     ],
     datasets: [
       {
